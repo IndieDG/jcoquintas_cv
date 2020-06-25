@@ -21,7 +21,7 @@ const Name = styled.h1`
 
 const Image = styled.img`
   border-radius: 50%;
-  max-width: 150px;
+  height: 200px;
 `;
 
 export const Company: React.FC<CompanyProps> = ({ name, logo }) => {

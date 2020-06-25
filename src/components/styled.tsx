@@ -5,6 +5,7 @@ export const defaultFont = "Roboto";
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 0px 50px 0px 50px;
 `;
 
 export const Cell = styled.div`

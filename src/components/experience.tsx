@@ -18,6 +18,7 @@ export enum Theme {
 }
 
 const Container = styled.section`
+  min-width: 370px;
   padding: 10px;
   background-color: ${(props) => (props.color ? props.color : "#fdfffc")};
 `;
