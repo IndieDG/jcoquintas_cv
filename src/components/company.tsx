@@ -15,7 +15,7 @@ const Container = styled.section`
 
 const Name = styled.h1`
   font-size: 0.7em;
-  font-family: '${defaultFont}';
+  font-family: ${defaultFont};
   color: #fdfffc;
 `;
 
@@ -24,11 +24,9 @@ const Image = styled.img`
   height: 200px;
 `;
 
-export const Company: React.FC<CompanyProps> = ({ name, logo }) => {
-  return (
-    <Container>
-      <Name>{name}</Name>
-      <Image alt={`${name} logo`} src={logo} />
-    </Container>
-  );
-};
+export const Company: React.FC<CompanyProps> = ({ name, logo }) => (
+  <Container>
+    <Name>{name}</Name>
+    <Image alt={`${name} logo`} src={logo} />
+  </Container>
+);

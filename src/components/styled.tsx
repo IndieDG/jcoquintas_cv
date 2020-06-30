@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const defaultFont = "Roboto";
+export const defaultFont = "monospace";
 
 export const Grid = styled.div`
   display: grid;

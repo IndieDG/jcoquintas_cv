@@ -4,6 +4,9 @@ import { Grid, Cell } from "./components/styled";
 import { Experience, Theme } from "./components/experience";
 import { Company } from "./components/company";
 import { Banner } from "./components/banner";
+import { Title } from "./components/title";
+import { About } from "./components/about";
+import { Skills } from "./components/skills";
 
 function App() {
   return (
@@ -15,6 +18,17 @@ function App() {
         phone="+351 919 581 374"
       />
       <Grid>
+        {/* ===== EXPERIENCE ===== */}
+        <Cell>
+          <Title title="Experience" />
+        </Cell>
+        <Cell>
+          <About
+            name="João Quintas"
+            description="some long description long description long description long description long description long description long description"
+          />
+        </Cell>
+
         {/* ===== EQUAL EXPERTS ===== */}
         <Cell>
           <Experience
@@ -103,6 +117,17 @@ function App() {
         </Cell>
         <Cell>
           <Company name="Collab" logo="images/collab.png" />
+        </Cell>
+
+        {/* ===== SKILLS ===== */}
+        <Cell>
+          <Title title="Skills" />
+        </Cell>
+        <Cell>
+          <Skills skills={[{ name: "Back End", level: 4 }]} />
+          <Skills skills={[{ name: "Front End", level: 3 }]} />
+          <Skills skills={[{ name: "Embedded", level: 4 }]} />
+          <Skills skills={[{ name: "Mobile", level: 3 }]} />
         </Cell>
       </Grid>
     </>

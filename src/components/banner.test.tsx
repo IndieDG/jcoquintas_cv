@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 import { Banner } from "./banner";
 
-describe("Company Tile", () => {
+describe("Banner", () => {
   it("should render passed props", () => {
     const { getByText, getByAltText } = render(
       <Banner

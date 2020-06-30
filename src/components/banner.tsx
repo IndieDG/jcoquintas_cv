@@ -22,14 +22,14 @@ const Name = styled.h1`
   text-align: right;
   margin: 5px 0px 5px 0px;
   font-size: 2em;
-  font-family: '${defaultFont}';
+  font-family: ${defaultFont};
   color: #fdfffc;
 `;
 
 const Contacts = styled.div`
   text-align: right;
   font-size: 1em;
-  font-family: '${defaultFont}';
+  font-family: ${defaultFont};
   color: ${(props) => (props.color ? props.color : "#979dac")};
 `;
 
@@ -43,17 +43,15 @@ export const Banner: React.FC<BannerProps> = ({
   profile,
   email,
   phone,
-}) => {
-  return (
-    <Container>
-      <section>
-        <Image alt="Profile Picture" src={profile} />
-      </section>
-      <section>
-        <Name>{name}</Name>
-        <Contacts>{email}</Contacts>
-        <Contacts>{phone}</Contacts>
-      </section>
-    </Container>
-  );
-};
+}) => (
+  <Container>
+    <section>
+      <Image alt="Profile Picture" src={profile} />
+    </section>
+    <section>
+      <Name>{name}</Name>
+      <Contacts>{email}</Contacts>
+      <Contacts>{phone}</Contacts>
+    </section>
+  </Container>
+);
