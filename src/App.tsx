@@ -2,10 +2,10 @@ import React from "react";
 import "./App.css";
 import { Grid, Cell } from "./components/styled";
 import { Experience, Theme } from "./components/experience";
-import { Company } from "./components/company";
+import { Institution } from "./components/institution";
 import { Banner } from "./components/banner";
 import { Title } from "./components/title";
-import { About } from "./components/about";
+import { Description } from "./components/description";
 import { Skills } from "./components/skills";
 
 function App() {
@@ -23,9 +23,12 @@ function App() {
           <Title title="Experience" />
         </Cell>
         <Cell>
-          <About
-            name="João Quintas"
-            description="some long description long description long description long description long description long description long description"
+          <Description
+            title="I'm João Quintas,"
+            description={`
+            a software engineer based in Lisbon but available for some long term travel if necessary.
+            I consider my self a fast learner and a good team player.
+            `}
           />
         </Cell>
 
@@ -43,12 +46,12 @@ function App() {
           />
         </Cell>
         <Cell>
-          <Company name="Equal Experts" logo="images/equalexperts.png" />
+          <Institution name="Equal Experts" logo="images/equalexperts.png" />
         </Cell>
 
         {/* ===== TUGA SAUCE ===== */}
         <Cell>
-          <Company name="Tuga Sauce" logo="images/tugasauce.png" />
+          <Institution name="Tuga Sauce" logo="images/tugasauce.png" />
         </Cell>
         <Cell>
           <Experience
@@ -81,12 +84,12 @@ function App() {
           />
         </Cell>
         <Cell>
-          <Company name="GMV" logo="images/gmv.jpg" />
+          <Institution name="GMV" logo="images/gmv.jpg" />
         </Cell>
 
         {/* ===== CYCLOID ===== */}
         <Cell>
-          <Company name="Cycloid" logo="images/cycloid.png" />
+          <Institution name="Cycloid" logo="images/cycloid.png" />
         </Cell>
         <Cell>
           <Experience
@@ -116,7 +119,7 @@ function App() {
           />
         </Cell>
         <Cell>
-          <Company name="Collab" logo="images/collab.png" />
+          <Institution name="Collab" logo="images/collab.png" />
         </Cell>
 
         {/* ===== SKILLS ===== */}
@@ -128,6 +131,52 @@ function App() {
           <Skills skills={[{ name: "Front End", level: 3 }]} />
           <Skills skills={[{ name: "Embedded", level: 4 }]} />
           <Skills skills={[{ name: "Mobile", level: 3 }]} />
+        </Cell>
+
+        {/* ===== EDUCATION ===== */}
+        <Cell>
+          <Description
+            title="Software Engineering"
+            description={`
+            Graduated Instituto Superior Técnico with a Master's 
+            degree in software engineering. 
+            Majored in embedded systems and IoT with a minor in UI/UX.`}
+          />
+        </Cell>
+        <Cell>
+          <Title title="Education" />
+        </Cell>
+        {/* ===== IST MASTER'S ===== */}
+        <Cell>
+          <Institution name="IST" logo="images/ist.png" />
+        </Cell>
+        <Cell>
+          <Experience
+            title="Master's Degree"
+            description={[
+              "Thesis: MIPSter32 - A 32 bit MIPS Simulator",
+              "Embedded Systems as Major",
+              "UI/UX multimedia as Minor",
+              "Focus on architecture for embedded computing, mobile computation, and digital Signal processing",
+            ]}
+            start="Sept 2013 "
+            end="June 2016"
+          />
+        </Cell>
+        {/* ===== IST BACHELOR ===== */}
+        <Cell>
+          <Experience
+            title="Bachelor's Degree"
+            description={[
+              "Focus on  algorithms, data strutures, computer architecture, signal processing, operating systems, compilers, object oriented programming, and graphic development",
+              "Did two extra curricular summer interns at iTdS and Collab",
+            ]}
+            start="Sept 2007"
+            end="July 2011"
+          />
+        </Cell>
+        <Cell>
+          <Institution name="IST" logo="images/ist.png" />
         </Cell>
       </Grid>
     </>

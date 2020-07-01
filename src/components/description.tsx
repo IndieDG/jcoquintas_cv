@@ -3,11 +3,11 @@ import styled from "styled-components";
 import { defaultFont } from "./styled";
 
 type AboutProps = {
-  name: string;
+  title: string;
   description: string;
 };
 
-const Name = styled.h1`
+const Title = styled.h1`
   margin: 10px;
   font-size: 1em;
   font-family: ${defaultFont};
@@ -21,9 +21,12 @@ const Text = styled.div`
   color: #979dac;
 `;
 
-export const About: React.FC<AboutProps> = ({ name, description }) => (
+export const Description: React.FC<AboutProps> = ({
+  title: name,
+  description,
+}) => (
   <>
-    <Name>{`I'm ${name}.`}</Name>
+    <Title>{name}</Title>
     <Text>{description}</Text>
   </>
 );

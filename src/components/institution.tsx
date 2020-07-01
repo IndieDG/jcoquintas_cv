@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { defaultFont } from "./styled";
 
-type CompanyProps = {
+type InstitutionProps = {
   name: string;
   logo: string;
 };
@@ -24,7 +24,7 @@ const Image = styled.img`
   height: 200px;
 `;
 
-export const Company: React.FC<CompanyProps> = ({ name, logo }) => (
+export const Institution: React.FC<InstitutionProps> = ({ name, logo }) => (
   <Container>
     <Name>{name}</Name>
     <Image alt={`${name} logo`} src={logo} />

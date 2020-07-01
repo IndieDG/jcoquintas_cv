@@ -16,6 +16,7 @@ const Container = styled.section`
   top: 0px;
   background-color: #011627;
   padding: 0px 50px 0px 50px;
+  margin-bottom: 25px;
 `;
 
 const Name = styled.h1`
