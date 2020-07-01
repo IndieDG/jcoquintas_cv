@@ -13,9 +13,13 @@ function App() {
     <>
       <Banner
         name="João Quintas"
+        title="Software Engineer"
         profile="images/profile.jpg"
-        email="jcoquintas@gmail.com"
-        phone="+351 919 581 374"
+        contacts={{
+          email: "jcoquintas@gmail.com",
+          phone: "+351 919 581 374",
+          linkedIn: "https://www.linkedin.com/in/jo%C3%A3o-quintas-29a77696/",
+        }}
       />
       <Grid>
         {/* ===== EXPERIENCE ===== */}
