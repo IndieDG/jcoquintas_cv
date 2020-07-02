@@ -41,7 +41,7 @@ const Description = styled.div`
 `;
 
 const Ul = styled.ul`
-  font-size: 0.4em;
+  font-size: 0.3em;
   font-family: ${defaultFont};
   margin: 10px 0px 10px 0px;
   list-style-type: "→   ";

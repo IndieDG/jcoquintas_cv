@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./assets/css/fonts.css";
 import { Grid, Cell } from "./components/styled";
 import { Experience, Theme } from "./components/experience";
 import { Institution } from "./components/institution";

@@ -9,14 +9,14 @@ type AboutProps = {
 
 const Title = styled.h1`
   margin: 10px;
-  font-size: 1em;
+  font-size: 0.8em;
   font-family: ${defaultFont};
   color: #011627;
 `;
 
 const Text = styled.div`
   margin: 10px;
-  font-size: 0.4em;
+  font-size: 0.3em;
   font-family: ${defaultFont};
   color: #979dac;
 `;

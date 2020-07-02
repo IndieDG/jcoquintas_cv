@@ -52,7 +52,7 @@ const ContactSection = styled.section`
 
 const Contacts = styled.div`
   margin: 5px 0px 5px 0px;
-  font-size: 1em;
+  font-size: 0.8em;
   font-family: ${defaultFont};
   color: ${(props) => (props.color ? props.color : "#979dac")};
 `;
