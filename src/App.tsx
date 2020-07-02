@@ -20,6 +20,7 @@ function App() {
           email: "jcoquintas@gmail.com",
           phone: "+351 919 581 374",
           linkedIn: "https://www.linkedin.com/in/jo%C3%A3o-quintas-29a77696/",
+          github: "https://github.com/IndieDG/jcoquintas_cv",
         }}
       />
       <Grid>
@@ -32,7 +33,7 @@ function App() {
             title="I'm João Quintas,"
             description={`
             a software engineer based in Lisbon but available for some long term travel if necessary.
-            I consider my self a fast learner and a good team player.
+            I consider myself a fast learner and a good team player.
             `}
           />
         </Cell>
@@ -174,7 +175,7 @@ function App() {
             title="Bachelor's Degree"
             description={[
               "Focus on  algorithms, data strutures, computer architecture, signal processing, operating systems, compilers, object oriented programming, and graphic development",
-              "Did two extra curricular summer interns at iTdS and Collab",
+              "Did two extra curricular summer internships at iTdS and Collab",
             ]}
             start="Sept 2007"
             end="July 2011"
@@ -189,3 +190,6 @@ function App() {
 }
 
 export default App;
+
+// TODO: Links for companies linkedin profile
+// TODO: github link for the repo containing this code

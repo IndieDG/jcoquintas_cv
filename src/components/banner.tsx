@@ -6,6 +6,7 @@ type Contacts = {
   email: string;
   phone: string;
   linkedIn: string;
+  github?: string;
 };
 
 type BannerProps = {
@@ -63,8 +64,8 @@ const ProfileImage = styled.img`
 `;
 
 const SocialMedia = styled.img`
-  margin-right: -13px;
-  height: 50px;
+  margin: 5px;
+  height: 40px;
 `;
 
 export const Banner: React.FC<BannerProps> = ({
@@ -85,8 +86,13 @@ export const Banner: React.FC<BannerProps> = ({
       <Contacts>{contacts.email}</Contacts>
       <Contacts>{contacts.phone}</Contacts>
       <a href={contacts.linkedIn} target="_blank" rel="noopener noreferrer">
-        <SocialMedia alt="LinkedIn" src="images/linkedin.webp" />
+        <SocialMedia alt="LinkedIn" src="images/linkedin.png" />
       </a>
+      {contacts.github && (
+        <a href={contacts.github} target="_blank" rel="noopener noreferrer">
+          <SocialMedia alt="Github" src="images/github.png" />
+        </a>
+      )}
     </ContactSection>
   </Container>
 );
