@@ -3,8 +3,9 @@ import styled from "styled-components";
 import { defaultFont } from "./styled";
 
 type InstitutionProps = {
-  name: string;
+  name: String;
   logo: string;
+  link: string;
 };
 
 const Container = styled.section`
@@ -24,9 +25,15 @@ const Image = styled.img`
   height: 200px;
 `;
 
-export const Institution: React.FC<InstitutionProps> = ({ name, logo }) => (
+export const Institution: React.FC<InstitutionProps> = ({
+  name,
+  logo,
+  link,
+}) => (
   <Container>
     <Name>{name}</Name>
-    <Image alt={`${name} logo`} src={logo} />
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <Image alt={`${name} logo`} src={logo} />
+    </a>
   </Container>
 );

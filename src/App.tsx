@@ -52,12 +52,20 @@ function App() {
           />
         </Cell>
         <Cell>
-          <Institution name="Equal Experts" logo="images/equalexperts.png" />
+          <Institution
+            name="Equal Experts"
+            logo="images/equalexperts.png"
+            link="https://www.equalexperts.com/"
+          />
         </Cell>
 
         {/* ===== TUGA SAUCE ===== */}
         <Cell>
-          <Institution name="Tuga Sauce" logo="images/tugasauce.png" />
+          <Institution
+            name="Tuga Sauce"
+            logo="images/tugasauce.png"
+            link="https://www.facebook.com/tugasauce/"
+          />
         </Cell>
         <Cell>
           <Experience
@@ -90,12 +98,20 @@ function App() {
           />
         </Cell>
         <Cell>
-          <Institution name="GMV" logo="images/gmv.jpg" />
+          <Institution
+            name="GMV"
+            logo="images/gmv.jpg"
+            link="https://www.gmv.com/en/"
+          />
         </Cell>
 
         {/* ===== CYCLOID ===== */}
         <Cell>
-          <Institution name="Cycloid" logo="images/cycloid.png" />
+          <Institution
+            name="Cycloid"
+            logo="images/cycloid.png"
+            link="https://cycloid.pt/"
+          />
         </Cell>
         <Cell>
           <Experience
@@ -125,7 +141,11 @@ function App() {
           />
         </Cell>
         <Cell>
-          <Institution name="Collab" logo="images/collab.png" />
+          <Institution
+            name="Collab"
+            logo="images/collab.png"
+            link="https://www.collab.com/pt-br/"
+          />
         </Cell>
 
         {/* ===== SKILLS ===== */}
@@ -154,7 +174,11 @@ function App() {
         </Cell>
         {/* ===== IST MASTER'S ===== */}
         <Cell>
-          <Institution name="IST" logo="images/ist.png" />
+          <Institution
+            name="IST"
+            logo="images/ist.png"
+            link="https://tecnico.ulisboa.pt/pt/"
+          />
         </Cell>
         <Cell>
           <Experience
@@ -182,7 +206,11 @@ function App() {
           />
         </Cell>
         <Cell>
-          <Institution name="IST" logo="images/ist.png" />
+          <Institution
+            name="IST"
+            logo="images/ist.png"
+            link="https://tecnico.ulisboa.pt/pt/"
+          />
         </Cell>
       </Grid>
     </>
@@ -190,6 +218,3 @@ function App() {
 }
 
 export default App;
-
-// TODO: Links for companies linkedin profile
-// TODO: github link for the repo containing this code
