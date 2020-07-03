@@ -43,7 +43,7 @@ const Name = styled.h1`
     font-size: 2em;
   }
   @media ${device.mobile} {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   @media ${device.tablet} {
     font-size: 2em;
@@ -59,7 +59,7 @@ const Title = styled.h1`
     font-size: 1.5em;
   }
   @media ${device.mobile} {
-    font-size: 0.7em;
+    font-size: 1em;
   }
   @media ${device.tablet} {
     font-size: 1.5em;
