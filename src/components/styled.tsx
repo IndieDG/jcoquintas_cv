@@ -6,7 +6,7 @@ const size = {
   pc: "1024px",
 };
 
-const device = {
+export const device = {
   mobile: `(min-width: ${size.mobile})`,
   tablet: `(min-width: ${size.tablet})`,
   pc: `(min-width: ${size.pc})`,
