@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import "./assets/css/fonts.css";
-import { Grid, Cell } from "./components/styled";
+import { Grid, Cell, BottomCell } from "./components/styled";
 import { Experience, Theme } from "./components/experience";
 import { Institution } from "./components/institution";
 import { Banner } from "./components/banner";
@@ -28,7 +28,7 @@ function App() {
         <Cell>
           <Title title="Experience" />
         </Cell>
-        <Cell>
+        <BottomCell>
           <Description
             title="I'm João Quintas,"
             description={`
@@ -36,7 +36,7 @@ function App() {
             I consider myself a fast learner and a good team player.
             `}
           />
-        </Cell>
+        </BottomCell>
 
         {/* ===== EQUAL EXPERTS ===== */}
         <Cell>
@@ -51,13 +51,13 @@ function App() {
             end="Present"
           />
         </Cell>
-        <Cell>
+        <BottomCell>
           <Institution
             name="Equal Experts"
             logo="images/equalexperts.png"
             link="https://www.equalexperts.com/"
           />
-        </Cell>
+        </BottomCell>
 
         {/* ===== TUGA SAUCE ===== */}
         <Cell>
@@ -67,7 +67,7 @@ function App() {
             link="https://www.facebook.com/tugasauce/"
           />
         </Cell>
-        <Cell>
+        <BottomCell>
           <Experience
             title="Owner and Co-Founder"
             description={[
@@ -82,7 +82,7 @@ function App() {
             end="Mar 2019"
             theme={Theme.Light}
           />
-        </Cell>
+        </BottomCell>
 
         {/* ===== GMV ===== */}
         <Cell>
@@ -97,13 +97,13 @@ function App() {
             end="Feb 2019"
           />
         </Cell>
-        <Cell>
+        <BottomCell>
           <Institution
             name="GMV"
             logo="images/gmv.jpg"
             link="https://www.gmv.com/en/"
           />
-        </Cell>
+        </BottomCell>
 
         {/* ===== CYCLOID ===== */}
         <Cell>
@@ -113,7 +113,7 @@ function App() {
             link="https://cycloid.pt/"
           />
         </Cell>
-        <Cell>
+        <BottomCell>
           <Experience
             title="Android Developer"
             description={[
@@ -127,7 +127,7 @@ function App() {
             end="Mar 2019"
             theme={Theme.Light}
           />
-        </Cell>
+        </BottomCell>
 
         {/* ===== Collab ===== */}
         <Cell>
@@ -140,24 +140,24 @@ function App() {
             end="Feb 2019"
           />
         </Cell>
-        <Cell>
+        <BottomCell>
           <Institution
             name="Collab"
             logo="images/collab.png"
             link="https://www.collab.com/pt-br/"
           />
-        </Cell>
+        </BottomCell>
 
         {/* ===== SKILLS ===== */}
         <Cell>
           <Title title="Skills" />
         </Cell>
-        <Cell>
+        <BottomCell>
           <Skills skills={[{ name: "Back End", level: 4 }]} />
           <Skills skills={[{ name: "Front End", level: 3 }]} />
           <Skills skills={[{ name: "Embedded", level: 4 }]} />
           <Skills skills={[{ name: "Mobile", level: 3 }]} />
-        </Cell>
+        </BottomCell>
 
         {/* ===== EDUCATION ===== */}
         <Cell>
@@ -169,9 +169,10 @@ function App() {
             Majored in embedded systems and IoT with a minor in UI/UX.`}
           />
         </Cell>
-        <Cell>
+        <BottomCell>
           <Title title="Education" />
-        </Cell>
+        </BottomCell>
+
         {/* ===== IST MASTER'S ===== */}
         <Cell>
           <Institution
@@ -180,7 +181,7 @@ function App() {
             link="https://tecnico.ulisboa.pt/pt/"
           />
         </Cell>
-        <Cell>
+        <BottomCell>
           <Experience
             title="Master's Degree"
             description={[
@@ -192,7 +193,7 @@ function App() {
             start="Sept 2013 "
             end="June 2016"
           />
-        </Cell>
+        </BottomCell>
         {/* ===== IST BACHELOR ===== */}
         <Cell>
           <Experience
